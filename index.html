@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rompecabezas</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Rompecabezas Jacky</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Incluye Headbreaker y Konva desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/konva@8.4.3/konva.min.js"></script>
+  <script src="https://flbulgarelli.github.io/headbreaker/js/headbreaker.js"></script>
 </head>
 <body>
-  <div id="container">
-    <div id="preview">
-      <h2>Render</h2>
-      <img src="imagen.jpg" alt="Vista previa" />
+  <div class="container">
+    <div class="preview-box">
+      <img src="assets/imagen.jpg" alt="Guía del rompecabezas"/>
     </div>
-    <div id="puzzle-area">
-      <canvas id="puzzle-canvas"></canvas>
+    <div class="puzzle-frame">
+      <div id="puzzle"></div>
     </div>
   </div>
-  <script src="headbreaker.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>
